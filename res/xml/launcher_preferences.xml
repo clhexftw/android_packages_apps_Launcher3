@@ -48,8 +48,9 @@
     <!--
       LAUNCHER_HOME_SCREEN_ROTATION_ENABLED(615)
       LAUNCHER_HOME_SCREEN_ROTATION_DISABLED(616)
-    -->
-    <SwitchPreference
+
+    -->  
+  <SwitchPreference
         android:key="pref_allowRotation"
         android:title="@string/allow_rotation_title"
         android:summary="@string/allow_rotation_desc"
@@ -90,6 +91,10 @@
         android:defaultValue="true"
         android:persistent="true" />
 
+	<Preference
+        android:key="pref_trust_apps"
+        android:title="@string/trust_apps_manager_name" />
+    
     <androidx.preference.PreferenceScreen
         android:key="pref_developer_options"
         android:persistent="false"
